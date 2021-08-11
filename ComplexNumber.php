@@ -93,7 +93,7 @@ private function sign( $number ) {
 } 
     public function isEqual(ComplexNumber $c)
     {
-        return ((abs($this->re - $c->re) / abs($this->re) )< pow(0.1, $this->precision)) and ((($this->im - $c->im) / $this->im )< pow(0.1, $this->precision));
+        return ((abs($this->re - $c->re) / abs($this->re) )< pow(0.1, $this->precision)) and ((abs($this->im - $c->im) / abs($this->im ))< pow(0.1, $this->precision));
     }
     public function isReal()
     {
